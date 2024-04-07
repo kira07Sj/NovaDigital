@@ -16,4 +16,40 @@ body
     background-image: url("/assets/Images/bg.jpg");
     background-size: cover;
     background-position: center;
+    position: fixed;
+    z-index: -1;
+}
+
+.home
+{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.342);
+}
+.logo img
+{
+    width: 40%;
+    margin-left: 5rem;
+}
+.navs
+{
+    margin-right: 3rem;
+}
+.navs a{
+    text-decoration: none;
+    font-size: 20px;
+    
+}
+.sansita-regular {
+    font-family: "Sansita", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+  }
+.navbar
+{
+background-color: rgba(19, 19, 19, 0.596);
+}
+.nav-pills
+{
+    
 }
