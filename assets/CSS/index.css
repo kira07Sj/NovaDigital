@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     transition: .5s;
+    scroll-behavior: smooth;
 }
 body
 {
@@ -49,7 +50,37 @@ body
 {
 background-color: rgba(19, 19, 19, 0.596);
 }
-.nav-pills
+
+
+main
+{
+    display: flex;
+    position: absolute;
+    transform: translate(0%, 20%);
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+
+.paragraph
+{
+    display: flex;
+    flex-direction: column;
+    width: 35%;
+}
+span{
+    color: orange;
+}
+h1{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+p{
+    color: white;
+    font-size: 22px;
+    
+}
+.homeimg img
 {
     
 }
