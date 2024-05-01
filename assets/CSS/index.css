@@ -5,15 +5,11 @@
     transition: .5s;
     scroll-behavior: smooth;
 }
-body
-{
-    width: 100vw;
-    height: 100vh; 
-}
+
 .bg
 {
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 99vh;
     background-image: url("/assets/Images/bg.jpg");
     background-size: cover;
     background-position: center;
@@ -23,14 +19,22 @@ body
 
 .home
 {
-    width: 100vw;
-    height: 100vh;
+    width: 99vw;
+    height: 99vh;
     background-color: rgba(0, 0, 0, 0.342);
 }
 .logo img
 {
     width: 40%;
     margin-left: 5rem;
+}
+.navbar
+{
+    background-color: rgba(19, 19, 19, 0.596);
+    position: fixed;
+   justify-content: space-between;
+   width: 100%;
+   z-index: 10;
 }
 .navs
 {
@@ -39,6 +43,7 @@ body
 .navs a{
     text-decoration: none;
     font-size: 20px;
+    margin-left: 1rem;
     
 }
 .sansita-regular {
@@ -46,10 +51,7 @@ body
     font-weight: 600;
     font-style: normal;
   }
-.navbar
-{
-background-color: rgba(19, 19, 19, 0.596);
-}
+
 
 
 main
@@ -80,7 +82,74 @@ p{
     font-size: 22px;
     
 }
-.homeimg img
+
+p span
 {
+    font-weight: 600;
+}
+
+/*----------------------- service page-----------------------*/
+
+.Service
+{
+    width: 99vw;
+    background-color: rgba(61, 61, 61, 0.493);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ServiceHeader h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    transform: translate(0,230%);
     
+}
+
+.offerContainer
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    align-items: center;
+    margin: 6rem 0 3rem 5rem;
+    
+}
+
+.card
+{
+    width: 420;
+    height: 310;
+    background-color: 161616;
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    margin-top: 2rem;
+    border: 2px solid rgba(107, 107, 107, 0.534);
+    
+}
+
+.card:hover
+{
+    border: 2px solid orange;
+    transform: scale(1.02);
+}
+i
+{
+    font-size: 4.4rem;
+    margin: 1rem 0 0 1.5rem;
+    color: white;
+}
+.card .cardTitle h3{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    margin-left: 1.5rem;
+    margin-top: 1rem;
+}
+.card .cardDetail p{
+    color: white;
+    font-size: 18px;
+    width: 85%;
+    margin-left: 1.5rem;
 }
