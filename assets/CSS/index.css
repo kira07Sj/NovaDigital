@@ -88,6 +88,32 @@ p span
     font-weight: 600;
 }
 
+.header1{
+    border-right: 3px solid white;
+    width: 57%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 2s steps(17),
+              cursor .4s step-end infinite alternate;
+}
+
+
+@keyframes cursor
+{
+    50%{
+        border-color: transparent;
+    }
+}
+@keyframes typing
+{
+from {
+    width: 0;
+}
+100%{
+    border-right: none;
+}
+}
+
 /*----------------------- service page-----------------------*/
 
 .Service
@@ -152,4 +178,42 @@ i
     font-size: 18px;
     width: 85%;
     margin-left: 1.5rem;
+}
+
+/*----------------------------- About us page ------------------------*/
+.about
+{
+    width: 99vw;
+    height: 99vh;
+    background-color: rgba(0, 0, 0, 0.342);
+    
+}
+
+.about h2{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    text-align: center;
+    transform: translate(0,230%);
+    
+}
+.about .card{
+    text-align: center;
+    
+}
+.card .memberName h5{
+    color: white;
+}
+
+.card .cardDetail p{
+    color: white;
+    font-size: 14px;
+}
+.card .cardDetail i{
+    font-size: 14px;
+}
+
+.teamContainer
+{
+    justify-content: center;
+    margin-left: -4rem;
 }
