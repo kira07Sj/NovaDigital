@@ -129,6 +129,40 @@ from {
     }
 }
 
+
+.para{
+    opacity: 0;
+    transform: translateX(-3rem);
+    animation: para 1s 3s forwards;
+}
+
+@keyframes para{
+    100%{
+        opacity: 1;
+    transform: translateX(0);
+    }
+}
+
+.homeimg{
+    transform: translateY(-3rem);
+    opacity: 0;
+    animation: homeimg 3s forwards,
+                hover 4.5s 3s ease-in-out infinite;
+}
+
+@keyframes homeimg{
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes hover{
+    50%{
+        transform: translateY(-1rem);
+    }
+    
+}
 /*----------------------- service page-----------------------*/
 
 .Service
