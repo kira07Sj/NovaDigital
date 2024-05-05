@@ -10,7 +10,7 @@
 {
     width: 99vw;
     height: 99vh;
-    background-image: url("/assets/Images/bg.jpg");
+    background-image: url("../Images/bg.jpg");
     background-size: cover;
     background-position: center;
     position: fixed;
