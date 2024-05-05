@@ -57,6 +57,7 @@
 main
 {
     display: flex;
+    flex-wrap: wrap;
     position: absolute;
     transform: translate(0%, 20%);
     align-items: center;
@@ -96,7 +97,13 @@ p span
     animation: typing 2s steps(17),
               cursor .4s step-end infinite alternate;
 }
-
+.header2{
+    
+    
+    animation: header2anime .7s 2.4s forwards;
+    opacity: 0;
+    transform: translateX(-1rem);
+}
 
 @keyframes cursor
 {
@@ -107,11 +114,19 @@ p span
 @keyframes typing
 {
 from {
+    
     width: 0;
 }
 100%{
     border-right: none;
 }
+}
+
+@keyframes header2anime{
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 /*----------------------- service page-----------------------*/
