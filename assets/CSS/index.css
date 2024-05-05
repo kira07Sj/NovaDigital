@@ -16,6 +16,20 @@
     position: fixed;
     z-index: -1;
 }
+#upBtn{
+    display: none;
+}
+.UpArrow{
+    
+    background-color: white;
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    z-index: 20;
+    text-align: center;
+    color: rgb(20, 20, 20);
+    font-size: 3rem;
+}
 
 .home
 {
@@ -202,7 +216,19 @@ from {
     margin-left: 2rem;
     margin-top: 2rem;
     border: 2px solid rgba(107, 107, 107, 0.534);
-    
+    opacity: 0;
+    transform: translateX(-1rem);
+}
+
+.cardAnime{
+    animation: cardanime .7s forwards;
+}
+
+@keyframes cardanime{
+    100%{
+        opacity: 1;
+        transform: translateX(0);
+    }
 }
 
 .card:hover
@@ -228,6 +254,7 @@ i
     width: 85%;
     margin-left: 1.5rem;
 }
+
 
 /*----------------------------- About us page ------------------------*/
 .about
