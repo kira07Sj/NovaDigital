@@ -9,16 +9,26 @@ window.onscroll = function() {
 
 
 
-    var offset2 = 330;
+    var offset2 = 290;
     
     
     if(window.pageYOffset > offset2){
         $(".card").addClass("cardAnime");
     }
-    else if(window.pageYOffset < offset){
+    else if(window.pageYOffset < offset2){
         $(".card").removeClass("cardAnime");
     }
-    
+
+    var offset3 = 1600;
+
+    if(window.pageYOffset > offset3){
+        $(".formContainer").addClass("formanime");
+    }
+    else{
+        $(".formContainer").removeClass("formanime");
+    }
+
+
   };
 
   

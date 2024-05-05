@@ -306,7 +306,19 @@ i
 }
 
 .formContainer{
-    margin-top: 6rem;
+    margin-top: 3rem;
+    opacity: 0;
+    
+}
+.formanime{
+    animation: form 1s .5s forwards
+}
+
+@keyframes form{
+    100%{
+        margin-top: 6rem;
+        opacity: 1;
+    }
 }
 
 .formContainer h2{
