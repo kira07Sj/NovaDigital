@@ -290,3 +290,101 @@ form input{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     margin-top: 20px;
 }
+
+.footer{
+    width: 99vw;
+    background-color: 232323;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer .upperfooter
+{
+    display: flex;
+    padding: 2rem;
+    justify-content: space-around;
+}
+.footer .upperfooter .logo-sakes{
+width: 20%;
+font-size: 18px;
+
+}
+.footer .upperfooter .logo-sakes p{
+  
+    font-size: 18px;
+    margin-top: .7rem;
+}
+.footer .upperfooter .logo-sakes img{
+    width: 32%;
+}
+
+.footer .upperfooter .contactUs i
+{
+    font-size: 2.2rem;
+    color: orange;
+}
+
+.quicklink
+{
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+.quicklink a{
+    text-decoration: none;
+    color: D1CECE;
+    margin-top: .7rem;
+}
+
+.quicklink h3:hover{
+    color: white;
+
+}
+
+.quicklink a h3{
+    text-decoration: none;
+    color: D1CECE;
+    font-size: 18px;
+    
+}
+
+.contactUs{
+    display: flex;
+    flex-direction: column;
+    color: white;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    
+}
+.contactUs div{
+    display: flex;
+      
+}
+
+.contactUs div p{
+    font-size: 15px;
+    text-align: center;
+    margin-top: 1.7rem;
+    margin-left: 1rem;
+    font-family: sans-serif;
+}
+
+
+
+.footer .lowerfooter{
+    border-top: 1px solid orange;
+    height: 100px;
+    width: 80%;
+    place-content: center;
+    
+}
+
+.footer .lowerfooter h5{
+    font-size: 14px;
+    font-family: sans-serif;
+    color: white;
+    
+}
