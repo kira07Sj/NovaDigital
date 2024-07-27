@@ -59,6 +59,7 @@
    justify-content: space-between;
    width: 100%;
    z-index: 10;
+   backdrop-filter: blur(6px);
 }
 .navs
 {
@@ -221,6 +222,7 @@ from {
     width: 420;
     height: 310;
     background-color: 161616;
+    backdrop-filter: blur(6px);
     display: flex;
     flex-direction: column;
     margin-left: 2rem;
@@ -228,6 +230,7 @@ from {
     border: 2px solid rgba(107, 107, 107, 0.534);
     opacity: 0;
     transform: translateX(-1rem);
+    
 }
 
 .cardAnime{
@@ -283,6 +286,9 @@ i
 }
 .about .card{
     text-align: center;
+    display: flex;
+    align-items: center;
+    
     
 }
 .card .memberName h5{
@@ -296,7 +302,13 @@ i
 .card .cardDetail i{
     font-size: 14px;
 }
-
+.card .card-img-top
+{
+    width: 82%;
+    height: 270px;
+    margin-top: 10px;
+    
+}
 .teamContainer
 {
     justify-content: center;
@@ -314,11 +326,16 @@ i
     display: flex;
     flex-direction: column;
     align-items:center;
+    
 }
 
-.formContainer{
+ .formContainer{
     margin-top: 3rem;
     opacity: 0;
+    background-color: 1A1A1A;
+    padding: 3rem;
+    border-radius: 14px;
+    backdrop-filter: blur(7px);
     
 }
 .formanime{
@@ -336,14 +353,14 @@ i
     color: white;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     text-align: center;
+    
 }
 
-.formContainer .form{
+.contact .formContainer .form{
     display: flex;
     flex-direction: column;
-    padding: 3rem;
-    background-color: 1A1A1A;
-    border-radius: 14px;
+    
+    
 }
 
 form{
@@ -572,7 +589,7 @@ font-size: 18px;
 }
 
 
-@media (max-width: 420px){
+@media (max-width: 430px){
     .homeimg img{
         width: 75%;
         margin-left: 3rem;
@@ -591,14 +608,14 @@ font-size: 18px;
         font-size: 2rem;
     }
     .header1{
-        width: 77%;
+        width: 82%;
     }
     .offerContainer{
         margin-left: auto;
     }
     .card{
         width: 85%;
-        height: 93%;
+        height: 110%;
     }
     .card .cardDetail p{
         font-size: 16px;
@@ -654,6 +671,78 @@ font-size: 18px;
     }
     .header1{
         width: 84%;
+    }
+    .offerContainer{
+        margin-left: auto;
+    }
+    .card{
+        width: 85%;
+        height: 93%;
+        margin-top: -5px;
+    }
+    .card .cardDetail p{
+        font-size: 14px;
+    }
+    i{
+        font-size: 2.5rem;
+    }
+    .TeamContainer{
+        margin-left: -4.3rem;
+    }
+
+    .formContainer{
+        margin: .6rem;
+    }
+    .form h2{
+        font-size: 1.3rem;
+    }
+    .footer .upperfooter .logo-sakes{
+        width: 93%;
+        font-size: 18px;
+        
+    }
+    .footer .upperfooter h2{
+        font-size: 1.5rem;
+    }
+    .logo img{
+        width: 35%;
+        margin-top: .8rem;
+        margin-left: 35px;
+    }
+    .topheaders{
+        margin-left: 1.3rem;
+    }
+    .UpArrow{
+        bottom: 1rem;
+        right: 1rem;
+    }
+}
+
+
+@media (max-width: 290px){
+    .homeimg img{
+        width: 93%;
+        margin-left: 1rem;
+        margin-top: 1rem;
+    }
+    .paragraph h1{
+        font-size: 2rem;
+    }
+    .paragraph {
+        width: 85%;
+        margin-left: 1rem;
+    }
+    p{
+        font-size: 12px;
+    }
+    h2{
+        font-size: 2rem;
+    }
+    .topheaders h1{
+        font-size: 1.4rem;
+    }
+    .header1{
+        width: 95%;
     }
     .offerContainer{
         margin-left: auto;

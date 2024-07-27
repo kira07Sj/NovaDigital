@@ -9,13 +9,13 @@ window.onscroll = function() {
 
 
 
-    var offset2 = 290;
+    var offset2 = 280;
     
     
     if(window.pageYOffset > offset2){
         $(".card").addClass("cardAnime");
     }
-    else if(window.pageYOffset < offset2){
+    else if(window.pageYOffset < 210){
         $(".card").removeClass("cardAnime");
     }
 
